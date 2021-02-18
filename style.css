@@ -1,0 +1,281 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #273040;
+    position: relative;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Text Animation */
+.text{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 5;
+    transform: translate(-50%, -50%);
+}
+
+.text h1 span{
+    color: white;
+    font-weight: 800;
+    letter-spacing: 1px;
+    font-size: 9vw;
+    display: inline-block;
+    word-spacing: 5px;
+}
+
+.word{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    margin: auto;
+    max-width: 700px;
+}
+
+.letter{
+    float: left;
+    word-spacing: 5px;
+}
+
+.letter .out{
+    transform: rotateX(90deg);
+    transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.letter .behind{
+    transform: rotateX(-90deg);
+}
+
+.letter .in{
+    transform: rotateX(0deg);
+    transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* @media only screen and (min-width:768px){
+
+} */
+
+.banner{
+    height: 100vh;
+    position: relative;
+}
+
+.wrapper{
+    position: relative;
+    width: 100%;
+    background: url(./images/bubble2.png)140% 6% no-repeat, url(./images/lines.png) top center repeat-y #273040;
+    background-size: 44%, 70%;
+    overflow: hidden;
+}
+
+.planewrap{
+    position: fixed;
+    top: 50%;
+    max-width: 310px;
+    width: 290px;
+    left: 50%;
+    transition: 600ms ease;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.planewrap img{
+    transition: 0.5s;
+    animation: fadein 2.7s ease infinite;
+
+}
+
+@keyframes fadein{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(15px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+.navbar-scroll{
+    max-width: 250px;
+    width: 250px;
+}
+
+.text h1{
+    font-size: 9vw;
+    color: white;
+}
+
+.bannersplat .scotty{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    margin: 0px auto;
+}
+
+.fluid{
+    width: 230px;
+    z-index: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 230px;
+    border-radius: 850.226px 797.379px 831.66px 804.283px;
+    background-color: #00e5ea;
+    animation: wave 5s linear infinite;
+}
+
+@keyframes wave{
+    20%{
+        border-radius: 45% 55% 62% 38% / 53% 51% 49% 47%;
+    }
+    40%{
+        border-radius: 45% 55% 49% 51% / 36% 51% 49% 64%;
+    }
+    60%{
+        border-radius: 60% 40% 57% 43% / 47% 62% 38% 53%;
+    }
+    20%{
+        border-radius: 60% 40% 32% 68% / 38% 36% 64% 62%;
+    }
+}
+
+.scroll-indicator{
+    width: 10px;
+    height: 50px;
+    position: absolute;
+    bottom: 16px;
+    left: 49.7%;
+    transform: translateX(-50%);
+    z-index: 1;
+    margin: auto;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce{
+    0%, 20%, 50%, 80%, 100%{
+        transform: translateY(0);
+    }
+    40%{
+        transform: translateY(-30px);
+    }
+    60%{
+        transform: translateY(-15px);
+    }
+}
+
+.left-bar-section, .right-bar-section{
+     position: fixed;
+     width: 70px;
+     z-index: 111;
+     height: 100%;
+}
+
+.left-bar-section{
+     left: 0;
+}
+
+.right-bar-section{
+    right: 0;
+}
+
+.link-section a, .copyright-section p{
+    color: white;
+    text-transform: capitalize;
+    font-size: 20px;
+    display: inline-block;
+    font-size: 600;
+    writing-mode: vertical-rl;
+    /* text-decoration: underline; */
+}
+
+.copyright-section p{
+    font-size: 15px;
+    color: #4f5765;
+}
+
+.social-links{
+    padding-bottom: 20px;
+}
+
+.social-links a{
+    display: block;
+    margin: 6px 0px;
+    text-align: center;
+}
+
+.social-links a i{
+    font-size: 20px;
+    color: #4f5765;
+}
+
+.overlay{
+    position: fixed;
+    background-color: #273040;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 888;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.35s, visibility 0.35s, height 0.35s;
+    overflow: hidden;
+}
+
+.overlay.open{
+    opacity: 0;
+    visibility: visible;
+    transition: 0.35s;
+    height: 100%;
+}
+
+.ham-section .open-menu{
+    display: inline-block;
+    width: 50px;
+    margin: 16px 0px 0px 0px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    animation: wave 5s linear infinite;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #262d3a;
+}
+
+.abouttext{
+    padding: 9% 8%;
+    width: 100%;
+    text-align: center;
+    margin: 16% auto 0%;
+    z-index: 50;
+    position: relative;
+    background-color: #273040bd;
+    box-shadow: 0 0 150px #000000a6;
+}
+.abouttext h2{
+    font-size: 5vw;
+    color: white;
+    font-weight: 600;
+}
+
+.abouttext p{
+    /* font-size: 3px; */
+    color: white;
+    font-weight: 400;
+    padding: 0px 15px;
+}
