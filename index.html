@@ -9,13 +9,16 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-        <!-- Additional CSS -->
-        <link rel="stylesheet" href="style.css">
+    <!-- Additional CSS -->
+    <link rel="stylesheet" href="style.css">
     <!-- FontAwesome -->
     <script src="https://kit.fontawesome.com/ecb06db8db.js" crossorigin="anonymous"></script>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
 
 </head>
 
@@ -31,13 +34,13 @@
                     </div>
                     <div class="link-section text-center d-none d-md-block d-sm-none">
                         <a href="#">About me</a>
-                        <div class="copyright-section text-center">
-                            <p><i class="far fa-copyright"></i>shamantasristy2021,Bangladesh</p>
-                        </div>
+                    </div>
+                    <div class="copyright-section text-center">
+                        <p><i class="far fa-copyright"></i>shamantasristy2021,Bangladesh</p>
                     </div>
                 </div>
             </div>
-
+            <!-- left-bar close -->
 
             <!-- Right-bar -->
             <div class="right-bar-section">
@@ -50,9 +53,9 @@
                         <a href="">Contact me</a>
                     </div>
                     <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-facebook-square"></i></a>
                         <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fas fa-envelope"></i></a>
+                        <a href="#"><i class="fas fa-at"></i></a>
                     </div>
                 </div>
             </div>
@@ -70,22 +73,22 @@
                         <div class="col-md-8">
                             <div class="row">
                                 <div class="col-md-4">
-                                    <div class="navcolumn">
+                                    <div class="navcolumn" id="nav-column-first">
                                         <h2>About</h2>
                                         <a href="#" class="cd-btn">Home</a>
-                                        <a href="#" class="cd-btn">Story</a>
+                                        <a href="#" class="cd-btn">My Story</a>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
-                                    <div class="navcolumn">
+                                    <div class="navcolumn" id="nav-column-second">
                                         <h2>Work</h2>
-                                        <a href="#" class="cd-btn">Dream Trip</a>
-                                        <a href="#" class="cd-btn">Cooking Master</a>
+                                        <a href="#" class="cd-btn">Dream Trip</a><br>
+                                        <a href="#" class="cd-btn">Cooking Master</a><br>
                                         <a href="#" class="cd-btn">Panda Commerce</a>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
-                                    <div class="navcolumn">
+                                    <div class="navcolumn" id="nav-column-third">
                                         <h2>Contact</h2>
                                         <a href="#" class="cd-btn">Let's Talk</a>
                                     </div>
@@ -94,9 +97,10 @@
                         </div>
                     </div>
                 </div>
-
             </section>
+
             <!-- Nav-Bar Close -->
+
             <div class="wrapper">
                 <div class="banner">
                     <div class="planewrap">
@@ -109,9 +113,10 @@
                         <div class="fluid"></div>
                         <div class="fluiddark"></div>
                         <div class="text">
-                            <h1><span class="word d-flex justify-content-center">Developer.</span></h1>
-                            <h1><span class="word d-flex justify-content-center">Designer.</span></h1>
-                            <h1><span class="word d-flex justify-content-center">Art Enthusiast.</span></h1>
+                            <h1>
+                                <span class="word d-flex justify-content-center">Developer.</span>
+                                <span class="word d-flex justify-content-center">Designer.</span>
+                            </h1>
                         </div>
                     </div>
                     <div class="scroll-indicator">
@@ -133,180 +138,263 @@
                         <div class="row d-flex justify-content-center">
                             <div class="col-md-7">
                                 <div class="abouttext">
-                                    <h2>Hello, I'm Shamanta</h2>
-                                    <p class="lead">I am a Frontend Developer and an Electrical engineer.My spot of expertise are at
+                                    <h2 class="display-5">Hello, I'm Shamanta</h2>
+                                    <p class="lead">I am a Frontend Developer and an Electrical Engineer.I love all
+                                        forms of art.My spot of
+                                        expertise are at
                                         html5,CSS3,Javascript and Bootstrap...</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
-                <div class="wave-g">
+                <div class="wavy-g"></div>
 
+                <section class="about-wrapper">
+                    <div class="container">
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-md-10">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="direction text-left">
+                                            <div class="about-icon">
+                                                <div class="circle-shape"></div>
+                                                <img src="images/direction.png" class="img-fluid" alt="">
+                                            </div>
+                                            <h3 class="heading">Strong <br>Direction</h3>
+                                            <p class="hideme">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                Atque
+                                                corporis distinctio, asperiores quae sapiente, adipisci optio inventore
+                                                non
+                                                rerum ratione aliquid saepe?</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="strategy text-right">
+                                            <div class="about-icon">
+                                                <div class="circle-shape">
+
+                                                </div>
+                                                <img src="images/strategy.png" class="img-fluid" alt="">
+                                            </div>
+                                            <h3 class="heading">Deep Strategy</h3>
+                                            <p class="hideme">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                Atque
+                                                corporis distinctio, asperiores quae sapiente, adipisci optio inventore
+                                                non
+                                                rerum ratione aliquid saepe?</p>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-md-6">
+                                        <div class="design text-left">
+                                            <div class="about-icon">
+                                                <div class="circle-shape"></div>
+                                                <img src="images/design.png" class="img-fluid" alt="">
+                                            </div>
+                                            <h3 class="heading">Rockin' Design</h3>
+                                            <p class="hideme">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                Atque
+                                                corporis distinctio, asperiores quae sapiente, adipisci optio inventore
+                                                non
+                                                rerum ratione aliquid saepe? Asperiores quaerat, earum distinctio.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="work-bg">
+                    <div class="container">
+                        <div class="work work1">
+                            <div class="row d-flex align-items-center">
+                                <div class="col-md-5 col-sm-6 col-12">
+                                    <div class="workpic">
+                                        <div class="big-circle-shape"></div>
+                                        <img src="images/londonborn-device.png" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-5 offset-md-1 col-sm-12 offset-sm-0">
+                                    <div class="workintro">
+                                        <div class="worktext text-right">
+                                            <h3>Dream <br>Trip</h3>
+                                            <p>A Travel agency website who helps people to travel their dream
+                                                destinations in affordable cost. Lorem ipsum dolor sit, amet consectetur
+                                                adipisicing elit. Impedit, eveniet!</p><a href="" class="cd-btn">View
+                                                Work</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="work work2">
+                            <div class="row d-flex align-items-center">
+                                <div class="col-md-5 offset-md-1 col-sm-12 offset-sm-0" id="first">
+                                    <div class="workintro">
+                                        <div class="worktext">
+                                            <h3>CooKing<br>Master</h3>
+                                            <p>An application that helps anyone cook their favourite recipes.It contains
+                                                lots and lots of delicious recipes.Whit the help of this app,anyone can
+                                                make
+                                                their favourite dish and enjoy them. Lorem ipsum dolor sit amet. </p><a
+                                                href="" class="cd-btn">View
+                                                Work</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-5 col-sm-6 col-12 offset-md-1" id="second">
+                                    <div class="workpic">
+                                        <div class="big-circle-shape"></div>
+                                        <img src="images/subaru-device.png" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="work work3">
+                            <div class="row d-flex align-items-center">
+                                <div class="col-md-5 col-sm-6 col-12">
+                                    <div class="workpic">
+                                        <div class="big-circle-shape"></div>
+                                        <img src="images/valeyo-device.png" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-5 offset-md-1 col-sm-12 offset-sm-0" id="fourth">
+                                    <div class="workintro">
+                                        <div class="worktext text-right">
+                                            <h3>Panda <br>Commerce</h3>
+                                            <p>E-commerce website where anyone can buy goods in one click. Lorem ipsum
+                                                dolor, sit amet consectetur adipisicing elit. Eveniet, possimus?</p><a
+                                                href="" class="cd-btn">View
+                                                Work</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="workclose">
+                    <img src="images/wavy2.png" class="img-fluid" alt="">
                 </div>
+                <!------- Work section closed --------->
+
+                <section class="contact-wrapper">
+                    <div class="contact-text">
+                        <h1>You've landed,<a href="" class="cd-btn">let's talk</a></h1>
+                    </div>
+                    <div class="bannersplat">
+                        <div class="scotty">
+                            <img src="images/scotland.png" alt="">
+                        </div>
+                        <div class="fluid"></div>
+                        <div class="fluiddark"></div>
+                    </div>
+                </section>
             </div>
-            <section class="about-wrapper">
-                <div class="container">
-                    <div class="row d-flex justify-content-center">
-                        <div class="col-md-10">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="direction text-left">
-                                        <div class="about-icon">
-                                            <div class="circle-shape">
-
-                                            </div>
-                                            <img src="images/direction.png" class="img-fluid" alt="">
-                                        </div>
-                                        <h3 class="heading">Strong <br>Direction</h3>
-                                        <p class="hideme">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-                                            corporis distinctio, asperiores quae sapiente, adipisci optio inventore non
-                                            rerum ratione aliquid saepe? Asperiores quaerat, earum distinctio incidunt
-                                            molestiae quibusdam provident!</p>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-6">
-                                    <div class="strategy text-right">
-                                        <div class="about-icon">
-                                            <div class="circle-shape">
-
-                                            </div>
-                                            <img src="images/strategy.png" class="img-fluid" alt="">
-                                        </div>
-                                        <h3 class="heading">Deep Strategy</h3>
-                                        <p class="hideme">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-                                            corporis distinctio, asperiores quae sapiente, adipisci optio inventore non
-                                            rerum ratione aliquid saepe? Asperiores quaerat, earum distinctio incidunt
-                                            molestiae quibusdam provident!</p>
-                                    </div>
-                                </div>
-
-
-                                <div class="col-md-6">
-                                    <div class="design text-left">
-                                        <div class="about-icon">
-                                            <div class="circle-shape">
-
-                                            </div>
-                                            <img src="images/design.png" class="img-fluid" alt="">
-                                        </div>
-                                        <h3 class="heading">Rockin' Design</h3>
-                                        <p class="hideme">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-                                            corporis distinctio, asperiores quae sapiente, adipisci optio inventore non
-                                            rerum ratione aliquid saepe? Asperiores quaerat, earum distinctio incidunt
-                                            molestiae quibusdam provident!</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="work-bg">
-                <div class="container">
-                    <div class="work work1">
-                        <div class="row d-flex align-items-center">
-                            <div class="col-md-5 col-sm-6 col-12">
-                                <div class="workpic">
-                                    <div class="big-circle-shape"></div>
-                                    <img src="images/londonborn-device.png" class="img-fluid" alt="">
-                                </div>
-                            </div>
-                            <div class="col-md-5 offset-md-1 col-sm-12 offset-sm-0">
-                                <div class="workintro">
-                                    <div class="worktext text-right">
-                                        <h3>Dream <br>Trip</h3>
-                                        <p>A Travel agency website who helps people to travel their dream
-                                            destinations in affordable cost. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit, eveniet!</p><a href="" class="cd-btn">View
-                                            Work</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="work work2">
-                        <div class="row d-flex align-items-center">
-                            <div class="col-md-5 offset-md-1 col-sm-12 offset-sm-0" id="first">
-                                <div class="workintro">
-                                    <div class="worktext text-right">
-                                        <h3>CooKing<br>Master</h3>
-                                        <p>An application that helps anyone cook their favourite recipes.It contains
-                                            lots and lots of delicious recipes.Whit the help of this app,anyone can make
-                                            their favourite dish and enjoy them. Lorem ipsum dolor sit amet. </p><a href="" class="cd-btn">View
-                                            Work</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-5 col-sm-6 col-12 offset-md-1" id="second">
-                                <div class="workpic">
-                                    <div class="big-circle-shape"></div>
-                                    <img src="images/subaru-device.png" class="img-fluid" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="work work3">
-                        <div class="row d-flex align-items-center">
-                            <div class="col-md-5 col-sm-6 col-12">
-                                <div class="workpic">
-                                    <div class="big-circle-shape"></div>
-                                    <img src="images/valeyo-device.png" class="img-fluid" alt="">
-                                </div>
-                            </div>
-                            <div class="col-md-5 offset-md-1 col-sm-12 offset-sm-0" id="forth">
-                                <div class="workintro">
-                                    <div class="worktext text-right">
-                                        <h3>Panda <br>Commerce</h3>
-                                        <p>E-commerce website where anyone can buy goods in one click. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, possimus?</p><a href="" class="cd-btn">View
-                                            Work</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-            </section>
-            <div class="workclose">
-                <img src="images/wavy2.png" class="img-fluid" alt="">
-            </div>
-      <section class="contact-wrapper">
-          <div class="contact-text">
-              <h1>You've landed.<a href="" class="cd-btn">let's talk</a></h1>
-          </div>
-          <div class="bannersplat">
-              <div class="scotty">
-                  <img src="images/scotland.png" alt="">
-              </div>
-              <div class="fluid"></div>
-              <div class="fluiddark"></div>
-          </div>
-      </section>
-
         </div>
     </main>
 
-    <!-- Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
         crossorigin="anonymous"></script>
 
-        <!-- Javascript -->
-        <script>
-            $(document).ready(function(){
-                $(window).scroll(function{
-                    if($(window).scrollTop() < 100){
-                        $('.planewrap').removeClass('.navbar-scroll');
-                    }
-                    else{
-                        $('.planewrap').addClass('.navbar-scroll');
-                    }
-                });
+
+
+    <script>
+        let words = document.getElementsByClassName('word');
+        let wordArray = [];
+        let currentWord = 0;
+
+        words[currentWord].style.opacity = 1;
+        for (let i = 0; i < words.length; i++) {
+            splitLetters(words[i]);
+        }
+
+        function changeWord() {
+            let cw = wordArray[currentWord];
+            let nw = currentWord == words.length - 1 ? wordArray[0] : wordArray[currentWord + 1];
+            for (let i = 0; i < cw.length; i++) {
+                animateLetterOut(cw, i);
+            }
+
+            for (let i = 0; i < nw.length; i++) {
+                nw[i].className = 'letter behind';
+                nw[0].parentElement.style.opacity = 1;
+                animateLetterIn(nw, i);
+            }
+
+            currentWord = (currentWord == wordArray.length - 1) ? 0 : currentWord + 1;
+        }
+
+        function animateLetterOut(cw, i) {
+            setTimeout(function () {
+                cw[i].className = 'letter out';
+            }, i * 80);
+        }
+
+        function animateLetterIn(nw, i) {
+            setTimeout(function () {
+                nw[i].className = 'letter in';
+            }, 340 + (i * 80));
+        }
+
+        function splitLetters(word) {
+            var content = word.innerHTML;
+            word.innerHTML = '';
+            var letters = [];
+            for (let i = 0; i < content.length; i++) {
+                var letter = document.createElement('span');
+                letter.className = 'letter';
+                letter.innerHTML = content.charAt(i);
+                word.appendChild(letter);
+                letters.push(letter);
+            }
+
+            wordArray.push(letters);
+        }
+
+        changeWord();
+        setInterval(changeWord, 4000);
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                if ($(window).scrollTop() < 100) {
+                    $('.planewrap').removeClass('.navbar-scroll');
+                }
+                else {
+                    $('.planewrap').addClass('.navbar-scroll');
+                }
             });
-        </script>
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.open-menu').on('click', function () {
+                $('.overlay').addClass('open');
+            });
+            $('.close-menu').on('click', function () {
+                $('.overlay').removeClass('open');
+            });
+        });
+    </script>
 </body>
 
 </html>
